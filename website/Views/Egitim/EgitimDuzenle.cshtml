@@ -1,0 +1,28 @@
+﻿@model MvcCv.Models.Entity.TblEgitimlerim
+@{
+    ViewBag.Title = "EgitimDuzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4>Eğitim Düzenleme Sayfası </h4>
+<br />
+<form method="post">
+    @Html.Label("Okul Adı")
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    <br />
+    @Html.Label("Fakülte Adı")
+    @Html.TextBoxFor(x => x.AltBaslik, new { @class = "form-control" })
+    <br />
+    @Html.Label("Bölüm Adı")
+    @Html.TextBoxFor(x => x.AltBaslik2, new { @class = "form-control" })
+    <br />
+    @Html.Label("Not Ortalaması")
+    @Html.TextBoxFor(x => x.GNO, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-info">Güncelle</button>
+</form>
